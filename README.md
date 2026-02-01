@@ -1,5 +1,7 @@
 # Valentine's Ask
 
+Deployed temporarily using AWS Amplify at: https://main.d2gujpjvmejtnu.amplifyapp.com/
+
 A simple single page webpage to send your valentine.
 
 ## Features
