@@ -1,0 +1,167 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: transparent;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0.5em 0;
+  max-height: 45%;
+  object-fit: contain;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: aliceblue;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  gap: 0.3em;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: pink;
+  margin: 0.5em 0;
+  flex-shrink: 0;
+}
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  margin: 0;
+  flex: 1;
+  color: aliceblue;
+  background-color: darkgrey;
+}
+
+.yes {
+  min-width: 70px;
+  font-size: 1em;
+  padding: 0.6em 1.2em;
+}
+
+.no {
+  max-width: 50px;
+  font-size: 0.8em;
+  padding: 0.5em 0.8em;
+  min-width: 40px;
+}
+
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  #root {
+    padding: 0.5rem;
+  }
+  
+  .card {
+    width: 90vw;
+    max-width: 320px;
+    height: 80vh;
+    max-height: 450px;
+    padding: 1em;
+    overflow: hidden;
+  }
+  
+  .card div {
+    padding: 0.5em;
+  }
+  
+  h1 {
+    font-size: 1.2em;
+    margin: 0.3em 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    max-height: 35vh;
+    object-fit: contain;
+    margin: 0.3em 0;
+  }
+  
+  .button-container {
+    gap: 0.5rem;
+    max-width: 200px;
+  }
+  
+  .yes {
+    min-width: 60px;
+    padding: 0.6em 1em;
+  }
+  
+  .no {
+    min-width: 35px;
+    padding: 0.4em 0.6em;
+    font-size: 0.7em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    width: 450px;
+    height: 550px;
+    padding: 3em;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+}
